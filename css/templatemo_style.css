@@ -1,9 +1,9 @@
 /* Credit: http://www.templatemo.com */
 
 html, body {
-	font-family: 'Raleway', "Trebuchet MS", Arial, Helvetica, sans-serif; 
-	padding: 0px; 
-	margin: 0px; 
+	font-family: 'Raleway', "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin: 0px;
 	color: #8a8a8a;
 }
 
@@ -33,7 +33,7 @@ h1	{	font-size: 1.5em;
 	padding: 10px 8px;
 	float: left;
 	}
-	
+
 h2	{ font-size: 24px; color: #333333; }
 
 .templatemo_reasonbg h2, .templatemo_blog h2 { color: #ffffff; }
@@ -63,9 +63,39 @@ img {
 	position: relative;
 }
 .logo {
-	padding: 0 0 0 20px;
 	width: 190px;
+
+	float: left;
+	padding: 10px;
+
+	height: 45px;
+	line-height: 45px;
+	max-height: 45px;
+
+	text-transform: uppercase;
+	background-color: #72b842;
+	color: #FFF;
+	font-size: x-large;
+	text-align: center;
+
 }
+.sublogo {
+	width: 190px;
+
+	float: left;
+
+	background-color: #72b842;
+	color: #FFF;
+	font-size: small;
+	text-align: center;
+	margin: 0;
+	padding:0;
+
+	line-height: 35px;
+	max-height: 35px;
+
+}
+
 .mainMenu {
 
 }
@@ -187,7 +217,7 @@ img {
 	border-radius: 5px;
 	font-size: 32px;
 	color: #ffffff;
-} 
+}
 
 .hover-box {
     position: absolute;
@@ -273,10 +303,10 @@ img {
 	text-align: center;
 }
 .templatemo_blog p { padding-bottom: 50px; }
-.templatemo_wrapperblogbox	{	
+.templatemo_wrapperblogbox	{
 	float: left;
 }
-.templatemo_wrapperblogbox a.fa	{ 
+.templatemo_wrapperblogbox a.fa	{
 	padding: 8px;
 	background: #c6cfd3;
 	color: #ffffff;
@@ -379,7 +409,7 @@ img {
   margin: 50px 0;
   position: relative;
 }
-.slideshow { 
+.slideshow {
   margin: auto;
   width: 80%;
 }
@@ -458,7 +488,7 @@ img {
 }
 .addr ul li {
   list-style-type: none;
-} 
+}
 .addr ul li i {
   width: 14px;
   margin-right: 10px;
@@ -484,7 +514,7 @@ img {
 }
 .templatemo_footer ul li:before {
     content: "\002022 ";
-    color: #72b842; 
+    color: #72b842;
 	font-size: 2.5em;
     vertical-align: middle;
 	line-height: 30px;
@@ -514,9 +544,9 @@ img {
 }
 .templatemo_footer span.left.fa-envelope { font-size: 1.2em;}
 
-.templatemo_bottom	{ 
-	padding: 15px 0px; 
-	width: 100%; 
+.templatemo_bottom	{
+	padding: 15px 0px;
+	width: 100%;
 	background: #333536;
 	}
 .templatemo_bottom .left { float: left;}
@@ -563,13 +593,13 @@ ul.footer_gallery li { display: block; float: left; margin: 0 5px 5px 0 }
 ul.footer_gallery li img { }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-width : 480px) {
-	.mainMenu li a {		
+	.mainMenu li a {
 		font-size: 8px;
 	}
-	#top-menu li a {		
+	#top-menu li a {
 		font-size: 8px;
 	}
 	#top-menu li a	{ padding: 0px;}
@@ -613,7 +643,7 @@ and (max-width : 480px) {
 	margin-top: 10px;
 	}
 	.mailme {
-		
+
 	}
 	.logo {
 		text-align: center;
@@ -650,7 +680,7 @@ and (max-width : 480px) {
 	background: #72b842;
 	line-height: 40px;
 	}
-	
+
   .teamInfo ul li {
     width: 50%;
   }
@@ -714,8 +744,8 @@ and (max-width : 480px) {
 	.templatemo_container {
 	width: 100%;
 	}
-	
-	.templatemo_container .mainMenu li a { 
+
+	.templatemo_container .mainMenu li a {
 	padding: 10px;
 	}
 	.templatemo_margintop10	{
@@ -747,8 +777,8 @@ and (max-width : 480px) {
   }
 }
 
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-width : 540px)	{
 	.templatemo_clientwrapper	{ width: 320px; font-size: 12px;}
 	.templatemo_clientwrapper .next{ margin-top: 20px;}
@@ -757,8 +787,8 @@ and (max-width : 540px)	{
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 	#slider-direction-nav,
 	#slider-control-nav { opacity: 1; }
