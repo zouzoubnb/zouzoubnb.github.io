@@ -1,6 +1,4 @@
-var app = angular.module('myApp', []);
-
-app.controller('MainCtrl', function ($rootScope) {
+function MainCtrl($rootScope) {
     var getCurrentLang, getQueryParam;
 
     getQueryParam = function(name) {
@@ -24,11 +22,15 @@ app.controller('MainCtrl', function ($rootScope) {
     window.getCurrentLang = getCurrentLang;
 
 
+    $rootScope.lang = getCurrentLang();
+
     $rootScope._ = function(key){
-        console.log('key', key);
-        console.log('getCurrentLang', getCurrentLang());
+        var lang = getCurrentLang();
 
+        if (LANGPACK && LANGPACK[lang] && LANGPACK[lang][key]){
+            return LANGPACK[lang][key];
+        }else{
+            return key;
+        }
     };
-
-
-});
+}

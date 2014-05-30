@@ -3,7 +3,7 @@
     Free Responsive Template by templatemo
     http://www.templatemo.com
 -->
-<html>
+<html ng-app>
   <head>
     <title>ZouZou BnB</title>
     <meta name="keywords" content="smoothy, responsive bootstrap, one page, green, white, free html5 template, templatemo" />
@@ -13,8 +13,8 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/templatemo_style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/templatemo_misc.css">
+    <link href="css/zouzou_tpl_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/zouzou_tpl_misc.css">
 
     <link href="css/circle.css" rel="stylesheet">
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
@@ -52,7 +52,7 @@
 <script type="text/javascript">
 
 ddsmoothmenu.init({
-	mainmenuid: "templatemo_flicker", //menu DIV id
+	mainmenuid: "zouzou_tpl_flicker", //menu DIV id
 	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
 	classname: 'ddsmoothmenu', //class added to menu's outer DIV
 	//customtheme: ["#1c5a80", "#18374a"],
@@ -65,24 +65,25 @@ ddsmoothmenu.init({
   <body ng-controller="MainCtrl">
     <header>
     <!-- start menu -->
-    <div id="templatemo_home">
-    	<div class="templatemo_top">
-      <div class="container templatemo_container">
+    <div id="zouzou_tpl_home">
+    	<div class="zouzou_tpl_top">
+      <div class="container zouzou_tpl_container">
         <div class="row">
           <div class="col-sm-3 col-md-3">
             <div class="logo">ZouZou B&B</div>
             <span class="sublogo">as your sweet home</span>
           </div>
-          <div class="col-sm-9 col-md-9 templatemo_col9">
+          <div class="col-sm-9 col-md-9 zouzou_tpl_col9">
           	<div id="top-menu">
             <nav class="mainMenu">
               <ul class="nav">
-                <li><a class="menu" href="#templatemo_home">{{ _('Home') }}</a></li>
-                <li><a class="menu" href="#templatemo_about">{{ _('About') }}</a></li>
-                <li><a class="menu" href="#templatemo_portfolio">{{ _('Reservation') }}</a></li>
-                <li><a class="menu" href="#templatemo_blog">{{ _('Blog') }}</a></li>
-                <li><a class="menu" href="#templatemo_contact">{{ _('Contact') }}</a></li>
-                <li><a class="menu" href="/?lang=zh_TW">中文</a></li>
+                <li><a class="menu" href="#zouzou_tpl_home">{{ _('Home') }}</a></li>
+                <li><a class="menu" href="#zouzou_tpl_about">{{ _('About') }}</a></li>
+                <li><a class="menu" href="#zouzou_tpl_portfolio">{{ _('Reservation') }}</a></li>
+                <li><a class="menu" href="#zouzou_tpl_blog">{{ _('Blog') }}</a></li>
+                <li><a class="menu" href="#zouzou_tpl_contact">{{ _('Contact') }}</a></li>
+                <li ng-show="lang!='zh_TW'"><a class="menu" href="?lang=zh_TW">中文</a></li>
+                <li ng-show="lang!='en'"><a class="menu" href="?lang=en">English</a></li>
               </ul>
             </nav>
             </div>
@@ -93,18 +94,18 @@ ddsmoothmenu.init({
     </div>
     <div class="clear"></div>
     <!-- end menu -->
-      	<div  id="slider"  class="nivoSlider templatemo_slider">
+      	<div  id="slider"  class="nivoSlider zouzou_tpl_slider">
         	<a href="#"><img src="images/slider/img_1_blank.jpg" alt="slide 1" /></a>
 			<a href="#"><img src="images/slider/img_2_blank.jpg" alt="slide 2" /></a>
             <a href="#"><img src="images/slider/img_3_blank.jpg" alt="slide 3" /></a>
 
     	</div>
   </header>
-  	<div class="templatemo_lightgrey_about" id="templatemo_about">
+  	<div class="zouzou_tpl_lightgrey_about" id="zouzou_tpl_about">
 	<div class="container">
-    	<div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+    	<div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
         	<div class="item project-post">
-						<div class="templatemo_about_box">
+						<div class="zouzou_tpl_about_box">
                         	<div class="square_coner">
                      		   <span class="texts-a"><i class="fa fa-bell-o"></i></span>
                       	  </div>
@@ -116,9 +117,9 @@ ddsmoothmenu.init({
 						</div>
 					</div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+        <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
         	<div class="item project-post">
-						<div class="templatemo_about_box">
+						<div class="zouzou_tpl_about_box">
                         	<div class="square_coner">
                      		   <span class="texts-a"><i class="fa fa-tablet"></i></span>
                       	  </div>
@@ -130,9 +131,9 @@ ddsmoothmenu.init({
 						</div>
 					</div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12 templatemo_margintop10">
+        <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12 zouzou_tpl_margintop10">
         	<div class="item project-post">
-						<div class="templatemo_about_box">
+						<div class="zouzou_tpl_about_box">
                         	<div class="square_coner">
                      		   <span class="texts-a"><i class="fa fa-lock"></i></span>
                       	  </div>
@@ -144,9 +145,9 @@ ddsmoothmenu.init({
 						</div>
 					</div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12 templatemo_margintop10">
+        <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12 zouzou_tpl_margintop10">
         	<div class="item project-post">
-						<div class="templatemo_about_box">
+						<div class="zouzou_tpl_about_box">
                         	<div class="square_coner">
                      		   <span class="texts-a"><i class="fa fa-rocket"></i></span>
                       	  </div>
@@ -162,7 +163,7 @@ ddsmoothmenu.init({
     </div>
 
     <div class="clear"></div>
-    <div class="templatemo_reasonbg">
+    <div class="zouzou_tpl_reasonbg">
     	<h2>Reasons to choose us?</h2>
        		<p>Mauris placerat lacinia justo vitae feugiat. Free templates by templatemo.</p>
             <div class="clear height10"></div>
@@ -174,12 +175,12 @@ ddsmoothmenu.init({
     </div>
     <div class="clear"></div>
     <!--Our Portfolio Start-->
-    <div class="templatemo_portfolio" id="templatemo_portfolio">
+    <div class="zouzou_tpl_portfolio" id="zouzou_tpl_portfolio">
         	<h2>Our portfolio</h2>
             <p>Donec eget congue ligula, eget pharetra urna. Nam tempor tellus sit amet bibendum dapibus.</p>
 
             <div class="container">
-           	  <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+           	  <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
 								<img src="images/portfolio/1.jpg" alt="portfolio 1">
@@ -199,7 +200,7 @@ ddsmoothmenu.init({
 						</div>
 
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+              <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
 								<img src="images/portfolio/2.jpg" alt="portfolio 2">
@@ -219,7 +220,7 @@ ddsmoothmenu.init({
 						</div>
 
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+              <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
 								<img src="images/portfolio/3.jpg" alt="portfolio 3">
@@ -239,7 +240,7 @@ ddsmoothmenu.init({
 						</div>
 
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+              <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
 								<img src="images/portfolio/4.jpg" alt="portfolio 4">
@@ -262,7 +263,7 @@ ddsmoothmenu.init({
              </div>
                <div class="clear"></div>
               <div class="container">
-              		<div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+              		<div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
 								<img src="images/portfolio/5.jpg" alt="portfolio 5">
@@ -282,7 +283,7 @@ ddsmoothmenu.init({
 						</div>
 
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+              <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
 								<img src="images/portfolio/6.jpg" alt="portfolio 6">
@@ -302,7 +303,7 @@ ddsmoothmenu.init({
 						</div>
 
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+              <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
 								<img src="images/portfolio/7.jpg" alt="portfolio 7">
@@ -322,7 +323,7 @@ ddsmoothmenu.init({
 						</div>
 
               </div>
-              <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+              <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
 								<img src="images/portfolio/8.jpg" alt="portfolio 8">
@@ -349,73 +350,73 @@ ddsmoothmenu.init({
     <!--Our Portfolio End-->
     <div class="clear"></div>
     <!--Our Blog Start-->
-    <div class="templatemo_blog" id="templatemo_blog">
+    <div class="zouzou_tpl_blog" id="zouzou_tpl_blog">
     	<h2>Our blog</h2>
         	<p>Check out our latest posts.</p>
         <div class="clear"></div>
         <div class="container">
-       		<div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-            	<div class="templatemo_wrapperblogbox">
+       		<div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
+            	<div class="zouzou_tpl_wrapperblogbox">
                 	<a href="#" class="fa fa-calendar tooltip1" title="28 January 2084"></a>
                     <a href="#" class="fa fa-user tooltip2" title="Booker"></a>
                     <a href="#" class="fa fa-tag tooltip3" title="HTML5, CSS3"></a>
                     <a href="#" class="fa fa-comment tooltip4" title="Comments (4)"></a>
                 </div>
                 <div class="clear"></div>
-                <img src="images/templatemo_blogimage01.jpg" alt="blog image 1">
+                <img src="images/zouzou_tpl_blogimage01.jpg" alt="blog image 1">
                 <div class="clear"></div>
-                <div class="templatemo_blogtext">
+                <div class="zouzou_tpl_blogtext">
                 	<span class="left">New Touring</span>
                     <span class="right">
                     <a href="#" title="Click more"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
                     </span>
                 </div>
         	</div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
-            	<div class="templatemo_wrapperblogbox">
+            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
+            	<div class="zouzou_tpl_wrapperblogbox">
                 	<a href="#" class="fa fa-calendar tooltip1" title="26 January 2084"></a>
                     <a href="#" class="fa fa-user tooltip2" title="George"></a>
                     <a href="#" class="fa fa-tag tooltip3" title="Template, Design"></a>
                     <a href="#" class="fa fa-comment tooltip4" title="Comments (8)"></a>
                 </div>
                 <div class="clear"></div>
-                <img src="images/templatemo_blogimage02.jpg" alt="blog image 2">
+                <img src="images/zouzou_tpl_blogimage02.jpg" alt="blog image 2">
                 <div class="clear"></div>
-                <div class="templatemo_blogtext">
+                <div class="zouzou_tpl_blogtext">
                 	<span class="left">Coffee Shop</span>
                     <span class="right">
                     <a href="#" title="Click more"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
                     </span>
                 </div>
         	</div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12 templatemo_margintop10">
-            	<div class="templatemo_wrapperblogbox">
+            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12 zouzou_tpl_margintop10">
+            	<div class="zouzou_tpl_wrapperblogbox">
                 	<a href="#" class="fa fa-calendar tooltip1" title="24 January 2084"></a>
                     <a href="#" class="fa fa-user tooltip2" title="Jelly Bean"></a>
                     <a href="#" class="fa fa-tag tooltip3" title="Web Design, Portfolio"></a>
                     <a href="#" class="fa fa-comment tooltip4" title="Comments (16)"></a>
                 </div>
                 <div class="clear"></div>
-                <img src="images/templatemo_blogimage03.jpg" alt="blog image 3">
+                <img src="images/zouzou_tpl_blogimage03.jpg" alt="blog image 3">
                 <div class="clear"></div>
-                <div class="templatemo_blogtext">
+                <div class="zouzou_tpl_blogtext">
                 	<span class="left">Tea Time</span>
                     <span class="right">
                     <a href="#" title="Click more"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
                     </span>
                 </div>
         	</div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12 templatemo_margintop10">
-            	<div class="templatemo_wrapperblogbox">
+            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12 zouzou_tpl_margintop10">
+            	<div class="zouzou_tpl_wrapperblogbox">
                 	<a href="#" class="fa fa-calendar tooltip1" title="22 January 2084"></a>
                     <a href="#" class="fa fa-user tooltip2" title="John Walker"></a>
                     <a href="#" class="fa fa-tag tooltip3" title="Logo, Creative"></a>
                     <a href="#" class="fa fa-comment tooltip4" title="Comments (32)"></a>
                 </div>
                 <div class="clear"></div>
-                <img src="images/templatemo_blogimage04.jpg" alt="blog image 4">
+                <img src="images/zouzou_tpl_blogimage04.jpg" alt="blog image 4">
                 <div class="clear"></div>
-                <div class="templatemo_blogtext">
+                <div class="zouzou_tpl_blogtext">
                 	<span class="left">Mobile First</span>
                     <span class="right">
                     <a href="#" title="Click more"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
@@ -426,7 +427,7 @@ ddsmoothmenu.init({
     </div>
     <!--Our Blog End-->
 	<!--Our Partner Start-->
-    <div class="section6 templatemo_partner" id="templatemo_partners">
+    <div class="section6 zouzou_tpl_partner" id="zouzou_tpl_partners">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -462,37 +463,37 @@ ddsmoothmenu.init({
     </div>
     <!--Our Partner End-->
     <!--Our Client Start-->
-    <div class="templatemo_reasonbg">
+    <div class="zouzou_tpl_reasonbg">
     	<h2>What our clients say?</h2>
         <div class="container">
-        	<div class="col-xs-11 templatemo_col12 templatemo_clientwrapper">
-            	<div class="templatemo_clientimage">
-                <p class="templatemo_clientdes">Duis consequat ut quam ut sollicitudin. Donec eget congue ligula, eget pharetra urna. Nam tempor tellus sit amet bibendum dapibus.</p>
+        	<div class="col-xs-11 zouzou_tpl_col12 zouzou_tpl_clientwrapper">
+            	<div class="zouzou_tpl_clientimage">
+                <p class="zouzou_tpl_clientdes">Duis consequat ut quam ut sollicitudin. Donec eget congue ligula, eget pharetra urna. Nam tempor tellus sit amet bibendum dapibus.</p>
             	  <img src="images/client/1.jpg" alt="client image 1" />
                   <div class="clear"></div>
                   <div class="fa fa-circle mleft1"></div>
 			  	</div>
-                <div class="templatemo_clientimage">
-                <p class="templatemo_clientdes">Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus, vel pharetra neque enim tristique risus.</p>
+                <div class="zouzou_tpl_clientimage">
+                <p class="zouzou_tpl_clientdes">Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus, vel pharetra neque enim tristique risus.</p>
   				<img src="images/client/2.jpg" alt="client image 2" />
                 <div class="clear"></div>
                   <div class="fa fa-circle mleft2"></div>
 				</div>
-                <div class="templatemo_clientimage">
-                <p class="templatemo_clientdes">Quisque tincidunt risus et enim. Vestibulum gravida sem at sem bibendum vehicula. Sed et leo. </p>
+                <div class="zouzou_tpl_clientimage">
+                <p class="zouzou_tpl_clientdes">Quisque tincidunt risus et enim. Vestibulum gravida sem at sem bibendum vehicula. Sed et leo. </p>
   				<img src="images/client/3.jpg" alt="client image 3" />
                 <div class="clear"></div>
                   <div class="fa fa-circle mleft3"></div>
 				</div>
-                <div class="templatemo_clientimage next templatemo_marginleft50">
-                <p class="templatemo_clientdes">Curabitur commodo arcu vel enim mollis consequat. Nulla pharetra tortor vel arcu. In rhoncus fermentum ipsum. </p>
+                <div class="zouzou_tpl_clientimage next zouzou_tpl_marginleft50">
+                <p class="zouzou_tpl_clientdes">Curabitur commodo arcu vel enim mollis consequat. Nulla pharetra tortor vel arcu. In rhoncus fermentum ipsum. </p>
   				<img src="images/client/4.jpg" alt="client image 4" />
                 <div class="clear"></div>
                   <div class="fa fa-circle mleft4"></div>
 
 				</div>
-              <div class="templatemo_clientimage next">
-                <p class="templatemo_clientdes">Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus, vel pharetra neque enim tristique risus. </p>
+              <div class="zouzou_tpl_clientimage next">
+                <p class="zouzou_tpl_clientdes">Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus, vel pharetra neque enim tristique risus. </p>
 		      <img src="images/client/5.jpg" alt="client image 5" />
  				 <div class="clear"></div>
                   <div class="fa fa-circle mleft5"></div>
@@ -506,19 +507,19 @@ ddsmoothmenu.init({
      <div class="clear"></div>
     <!--Our Client End-->
     <!--Contact Start -->
-    <div class="templatemo_lightgrey" id="templatemo_contact">
-    	<div class="templatemo_paracenter">
+    <div class="zouzou_tpl_lightgrey" id="zouzou_tpl_contact">
+    	<div class="zouzou_tpl_paracenter">
     	<h2>Contact us</h2></div>
         <div class="clear"></div>
         <div class="container">
-        	<div class="templatemo_paracenter">
+        	<div class="zouzou_tpl_paracenter">
             Pellentesque aliquam in risus eu ultrices. Suspendisse id interdum nibh. Etiam vel mattis augue, a vestibulum arcu. Nam rutrum diam dolor, eu vehicula nisl tincidunt non. Fusce tincidunt id justo eu tempor. Phasellus sit amet ante lobortis, mattis sapien id, dictum ipsum.
             </div>
             <div class="clear"></div>
             <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="templatemo_maps">
+            <div class="zouzou_tpl_maps">
               <div class="fluid-wrapper">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.809805934203!2d120.53083!3d23.896321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469357f7f605407%3A0xa44f6446a2dd2060!2zNTIy5Y-w54Gj5b2w5YyW57ij55Sw5bC-6YSJ5rCR5peP6Lev5LiA5q61MTcz6Jmf!5e0!3m2!1szh-TW!2s!4v1401185944990"></iframe>
               </div>
@@ -538,7 +539,7 @@ ddsmoothmenu.init({
                             <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 
                             <div class="form-group">
-                                <input class="ss-q-short form-control" dir="auto" id="entry_234990888" name="entry.234990888" placeholder="Your Name" required="" title="" type="text" value="">
+                                <input class="ss-q-short form-control" dir="auto" id="entry_234990888" name="entry.234990888" placeholder="{{ _('Your Name') }}" required="" title="" type="text" value="">
                                 <!--                             <div class="error-message"></div>
 
                                     <div class="required-message">
@@ -555,7 +556,7 @@ ddsmoothmenu.init({
                             <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 
                             <div class="form-group">
-                                <input class="ss-q-short form-control" dir="auto" id="entry_989226544" name="entry.989226544" placeholder="Your Email" required="" title=
+                                <input class="ss-q-short form-control" dir="auto" id="entry_989226544" name="entry.989226544" placeholder="{{ _('Your Email') }}" required="" title=
                                 "Must be a valid email address" type="email" value=""> <!--                             <div class="error-message">
                                         Must be a valid email address
                                     </div>
@@ -574,7 +575,7 @@ ddsmoothmenu.init({
                             <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 
                             <div class="form-group">
-                                <input class="ss-q-short form-control" dir="auto" id="entry_232950451" name="entry.232950451" pattern=".*.*" placeholder="Your Phone" required="" title="Must contain "
+                                <input class="ss-q-short form-control" dir="auto" id="entry_232950451" name="entry.232950451" pattern=".*.*" placeholder="{{ _('Your Phone') }}" required="" title="Must contain "
                                 type="text" value=""> <!--                             <div class="error-message">
                                         Must contain
                                     </div>
@@ -595,7 +596,7 @@ ddsmoothmenu.init({
                         <tbody>
                             <tr>
                                 <td class="ss-form-entry goog-inline-block" dir="ltr" id="navigation-buttons"><input class="btn btn-primary" id="ss-submit" name="submit" type="submit" value=
-                                "Send Message"></td>
+                                "{{_('Send Message')}}"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -712,13 +713,13 @@ ddsmoothmenu.init({
 
     <!--Contact End-->
     <!--Footer Start-->
-    <div class="templatemo_footer">
+    <div class="zouzou_tpl_footer">
     	<div class="container">
-       	  <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+       	  <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
             	<h2>About ZouZou B&B</h2>
                 <p>Etiam faucibus turpis id ipsum egestas porta. Cras in aliquet purus, ac varius turpis. Proin nibh mauris, lacinia at tincidunt egestas, tincidunt eleifend urna. Aliquam erat volutpat.</p>
           </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
             	<h2>Services</h2>
                 <ul>
                   <li>Integer condimentum</li>
@@ -728,11 +729,11 @@ ddsmoothmenu.init({
                   <li>Duis vel consectetur</li>
                 </ul>
                 <div class="clear"></div>
-                <div class="templatemo_morelink"><a href="#">and more... </a></div>
+                <div class="zouzou_tpl_morelink"><a href="#">and more... </a></div>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
             	<h2>Flicker</h2>
-					<div id="templatemo_flicker" >
+					<div id="zouzou_tpl_flicker" >
           <ul class="nobullet footer_gallery">
                 <li><a href="images/flicker/1.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s1.jpg" alt="image 1" /></a></li>
                 <li><a href="images/flicker/2.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s2.jpg" alt="image 2" /></a></li>
@@ -746,7 +747,7 @@ ddsmoothmenu.init({
             <br style="clear: left" />
         </div>
           </div>
-            <div class="col-xs-6 col-sm-6 col-md-3 templatemo_col12">
+            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
             <h2>Contact</h2>
             	<span class="left col-xs-1 fa fa-map-marker"></span>
                 <span class="right col-xs-11">120-240 Nam bibendum consectetur diam et fringilla</span>
@@ -765,7 +766,7 @@ ddsmoothmenu.init({
     </div>
    <!--Footer End-->
 	<!-- Bottom Start -->
-    <div class="templatemo_bottom">
+    <div class="zouzou_tpl_bottom">
     	<div class="container">
         	<div class="row">
             	<div class="left">Copyright © 2014 <a href="#">ZouZou B&B</a></div>
