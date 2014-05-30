@@ -1,6 +1,7 @@
 var LANGPACK = {
     "en": {
         'Home': 'Home',
+        'Contact Info': 'Contact',
 
     },
 
@@ -10,16 +11,31 @@ var LANGPACK = {
         'Reservation': '訂房',
         'Blog': '網誌',
         'Contact': '聯絡走走',
+        'Contact us': '聯絡我們',
+        'Contact Info': '聯絡資訊',
         'Your Name': '您的姓名',
         'Your Email': '您的電子郵件',
         'Your Phone': '您的聯絡電話',
         'Send Message': '確定送出訊息',
-        'Delicious Food': '美食',
-        'Together': '相聚',
+        'Delicious Food': '田園美食',
+        'Together': '親友相聚',
         'Moment': '美好時光',
-        'Heart': '真心款待',
+        'Heart': '用心款待',
         'Reasons to choose ZouZou B&B?': '為什麼要選擇走走?',
         'Our Rooms': '精緻房型',
-
+        'as your sweet home': '您旅行的家',
+        'Read More': '了解更多',
+        'What our customers say?': '聽聽來過走走的他們怎麼說?',
+        'No. 173, Section 1, Minzu Rd, Tianwei Township, Changhua County, Taiwan 522': '台灣彰化縣田尾鎮田尾村民族路一段173號',
+        'Services': '服務項目',
+        'Album': '相簿',
+        'About ZouZou B&B': '關於走走',
+        'Our partners': '合作商家',
+        'Our blog': '走走記錄',
+        'Room 1': '房間 1',
+        'Room 2': '房間 2',
+        'Room 3': '房間 3',
+        'Room 4': '房間 4',
+        'Room 5': '房間 5',
     }
 }

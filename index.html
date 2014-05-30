@@ -52,7 +52,7 @@
 <script type="text/javascript">
 
 ddsmoothmenu.init({
-	mainmenuid: "zouzou_tpl_flicker", //menu DIV id
+	mainmenuid: "zouzou_tpl_album", //menu DIV id
 	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
 	classname: 'ddsmoothmenu', //class added to menu's outer DIV
 	//customtheme: ["#1c5a80", "#18374a"],
@@ -71,7 +71,7 @@ ddsmoothmenu.init({
         <div class="row">
           <div class="col-sm-3 col-md-3">
             <div class="logo">ZouZou B&B</div>
-            <span class="sublogo">as your sweet home</span>
+            <span class="sublogo">{{_('as your sweet home')}}</span>
           </div>
           <div class="col-sm-9 col-md-9 zouzou_tpl_col9">
           	<div id="top-menu">
@@ -171,7 +171,7 @@ ddsmoothmenu.init({
             <div class="fa fa-camera-retro"></div>
             <div class="fa fa-heart"></div>
 			<div class="clear height20"></div>
-            <a class="btn btn-large btn-primary" href="#">Read More</a>
+            <a class="btn btn-large btn-primary" href="#zouzou_tpl_reservation">{{_('Read More')}}</a>
     </div>
     <div class="clear"></div>
     <!--Our Portfolio Start-->
@@ -351,7 +351,7 @@ ddsmoothmenu.init({
     <div class="clear"></div>
     <!--Our Blog Start-->
     <div class="zouzou_tpl_blog" id="zouzou_tpl_blog">
-    	<h2>Our blog</h2>
+    	<h2>{{ _('Our blog') }}</h2>
         	<p>Check out our latest posts.</p>
         <div class="clear"></div>
         <div class="container">
@@ -432,7 +432,7 @@ ddsmoothmenu.init({
         <div class="row">
           <div class="col-md-12">
             <div class="secHeader">
-              <h2 class="text-center">Our partners</h2>
+              <h2 class="text-center">{{ _('Our partners') }}</h2>
               <p class="text-center">Etiam faucibus turpis id ipsum egestas porta. Cras in aliquet purus, ac varius turpis.</p>
             </div>
           </div>
@@ -464,7 +464,7 @@ ddsmoothmenu.init({
     <!--Our Partner End-->
     <!--Our Client Start-->
     <div class="zouzou_tpl_reasonbg">
-    	<h2>What our clients say?</h2>
+    	<h2>{{_('What our customers say?')}}</h2>
         <div class="container">
         	<div class="col-xs-11 zouzou_tpl_col12 zouzou_tpl_clientwrapper">
             	<div class="zouzou_tpl_clientimage">
@@ -509,7 +509,7 @@ ddsmoothmenu.init({
     <!--Contact Start -->
     <div class="zouzou_tpl_lightgrey" id="zouzou_tpl_contact">
     	<div class="zouzou_tpl_paracenter">
-    	<h2>Contact us</h2></div>
+    	<h2>{{_('Contact us')}}</h2></div>
         <div class="clear"></div>
         <div class="container">
         	<div class="zouzou_tpl_paracenter">
@@ -651,23 +651,23 @@ ddsmoothmenu.init({
                         <div class="form-group">
                             <select class="form-control" id="entry_981945938" name="entry.981945938">
                                 <option value="Room 1">
-                                    Room 1
+                                    {{_('Room 1')}}
                                 </option>
 
                                 <option value="Room 2">
-                                    Room 2
+                                    {{_('Room 2')}}
                                 </option>
 
                                 <option value="Room 3">
-                                    Room 3
+                                    {{_('Room 3')}}
                                 </option>
 
                                 <option value="Room 4">
-                                    Room 4
+                                    {{_('Room 4')}}
                                 </option>
 
                                 <option value="Room 5">
-                                    Room 5
+                                    {{_('Room 5')}}
                                 </option>
                             </select> <!--                         <div class="required-message">
                                 This is a required question
@@ -716,11 +716,11 @@ ddsmoothmenu.init({
     <div class="zouzou_tpl_footer">
     	<div class="container">
        	  <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
-            	<h2>About ZouZou B&B</h2>
+            	<h2>{{ _('About ZouZou B&B')}}</h2>
                 <p>Etiam faucibus turpis id ipsum egestas porta. Cras in aliquet purus, ac varius turpis. Proin nibh mauris, lacinia at tincidunt egestas, tincidunt eleifend urna. Aliquam erat volutpat.</p>
           </div>
             <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
-            	<h2>Services</h2>
+            	<h2>{{ _('Services') }}</h2>
                 <ul>
                   <li>Integer condimentum</li>
                   <li>Quisque eget mi felis</li>
@@ -732,25 +732,25 @@ ddsmoothmenu.init({
                 <div class="zouzou_tpl_morelink"><a href="#">and more... </a></div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
-            	<h2>Flicker</h2>
-					<div id="zouzou_tpl_flicker" >
+            	<h2>{{ _('Album') }}</h2>
+					<div id="zouzou_tpl_album" >
           <ul class="nobullet footer_gallery">
-                <li><a href="images/flicker/1.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s1.jpg" alt="image 1" /></a></li>
-                <li><a href="images/flicker/2.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s2.jpg" alt="image 2" /></a></li>
-                <li><a href="images/flicker/3.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s3.jpg" alt="image 3" /></a></li>
-                <li><a href="images/flicker/4.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s4.jpg" alt="image 4" /></a></li>
-                <li><a href="images/flicker/5.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s5.jpg" alt="image 5" /></a></li>
-          	    <li><a href="images/flicker/6.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s6.jpg" alt="image 6" /></a></li>
-                <li><a href="images/flicker/7.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s7.jpg" alt="image 7" /></a></li>
-                <li><a href="images/flicker/8.jpg" data-rel="lightbox[gallery]"><img src="images/flicker/s8.jpg" alt="image 8" /></a></li>
+                <li><a href="images/album/1.jpg" data-rel="lightbox[gallery]"><img src="images/album/s1.jpg" alt="image 1" /></a></li>
+                <li><a href="images/album/2.jpg" data-rel="lightbox[gallery]"><img src="images/album/s2.jpg" alt="image 2" /></a></li>
+                <li><a href="images/album/3.jpg" data-rel="lightbox[gallery]"><img src="images/album/s3.jpg" alt="image 3" /></a></li>
+                <li><a href="images/album/4.jpg" data-rel="lightbox[gallery]"><img src="images/album/s4.jpg" alt="image 4" /></a></li>
+                <li><a href="images/album/5.jpg" data-rel="lightbox[gallery]"><img src="images/album/s5.jpg" alt="image 5" /></a></li>
+          	    <li><a href="images/album/6.jpg" data-rel="lightbox[gallery]"><img src="images/album/s6.jpg" alt="image 6" /></a></li>
+                <li><a href="images/album/7.jpg" data-rel="lightbox[gallery]"><img src="images/album/s7.jpg" alt="image 7" /></a></li>
+                <li><a href="images/album/8.jpg" data-rel="lightbox[gallery]"><img src="images/album/s8.jpg" alt="image 8" /></a></li>
             </ul>
             <br style="clear: left" />
         </div>
           </div>
             <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
-            <h2>Contact</h2>
+            <h2>{{_('Contact Info')}}</h2>
             	<span class="left col-xs-1 fa fa-map-marker"></span>
-                <span class="right col-xs-11">120-240 Nam bibendum consectetur diam et fringilla</span>
+                <span class="right col-xs-11">{{_('No. 173, Section 1, Minzu Rd, Tianwei Township, Changhua County, Taiwan 522')}}</span>
                 <div class="clear height10"></div>
                 <span class="left col-xs-1 fa fa-phone"></span>
                 <span class="right col-xs-11">010-020-0680</span>

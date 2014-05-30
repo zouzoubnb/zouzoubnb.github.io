@@ -569,13 +569,13 @@ img {
 	background: #72b842;
 }
 
-#zouzou_tpl_flicker	{}
-#zouzou_tpl_flicker ul li:before {
+#zouzou_tpl_album	{}
+#zouzou_tpl_album ul li:before {
     content: none;
     vertical-align: middle;
 }
 
-#zouzou_tpl_flicker.ddsmoothmenu ul li a {
+#zouzou_tpl_album.ddsmoothmenu ul li a {
 	width: 55px;
 	height: 55px;
 	margin-right: 0px;
