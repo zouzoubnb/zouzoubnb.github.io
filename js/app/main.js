@@ -21,8 +21,7 @@ function MainCtrl($rootScope) {
 
     window.getCurrentLang = getCurrentLang;
 
-
-    $rootScope.lang = getCurrentLang();
+    $rootScope.lang = getCurrentLang() ? getCurrentLang() : 'en';
 
     $rootScope._ = function(key){
         var lang = getCurrentLang();
