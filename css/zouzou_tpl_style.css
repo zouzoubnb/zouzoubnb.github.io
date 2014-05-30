@@ -270,12 +270,12 @@ img {
 	margin: 10px 8px;
 }
 
-.zouzou_tpl_portfolio {
+.zouzou_tpl_reservation {
 	padding: 80px 0px;
 	text-align: center;
 }
 
-.zouzou_tpl_portfolio p { padding-bottom: 50px; }
+.zouzou_tpl_reservation p { padding-bottom: 50px; }
 
 .portfolio-thumb { overflow: hidden; position: relative; }
 
@@ -635,7 +635,7 @@ and (max-width : 480px) {
 	.zouzou_tpl_col9	{ padding: 0px;}
 	.zouzou_tpl_slider	{ top: 130px;}
 	.zouzou_tpl_lightgrey_about	{ padding-top: 150px;}
-	.zouzou_tpl_portfolio	{ padding-top: 130px; }
+	.zouzou_tpl_reservation	{ padding-top: 130px; }
 	.zouzou_tpl_blog	{ padding-top: 130px;}
 	.zouzou_tpl_partner	{ padding-top: 130px;}
 	.zouzou_tpl_lightgrey	{ padding-top: 130px;}

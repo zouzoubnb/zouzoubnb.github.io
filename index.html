@@ -79,7 +79,7 @@ ddsmoothmenu.init({
               <ul class="nav">
                 <li><a class="menu" href="#zouzou_tpl_home">{{ _('Home') }}</a></li>
                 <li><a class="menu" href="#zouzou_tpl_about">{{ _('About') }}</a></li>
-                <li><a class="menu" href="#zouzou_tpl_portfolio">{{ _('Reservation') }}</a></li>
+                <li><a class="menu" href="#zouzou_tpl_reservation">{{ _('Reservation') }}</a></li>
                 <li><a class="menu" href="#zouzou_tpl_blog">{{ _('Blog') }}</a></li>
                 <li><a class="menu" href="#zouzou_tpl_contact">{{ _('Contact') }}</a></li>
                 <li ng-show="lang!='zh_TW'"><a class="menu" href="?lang=zh_TW">中文</a></li>
@@ -107,9 +107,9 @@ ddsmoothmenu.init({
         	<div class="item project-post">
 						<div class="zouzou_tpl_about_box">
                         	<div class="square_coner">
-                     		   <span class="texts-a"><i class="fa fa-bell-o"></i></span>
+                     		   <span class="texts-a"><i class="fa fa-cutlery"></i></span>
                       	  </div>
-                     	   Pixel Perfect Design</div>
+                     	   {{_('Delicious Food')}}</div>
 						<div class="col-xs-12 col-sm-6 col-md-3 hover-box" >
 							<div class="inner-hover-box">
 								<p>Nunc sed ullamcorper massa, vitae tristique lectus. Curabitur ultricies, nunc ac tincidunt sollicitudin, neque leo commodo nisl.</p>
@@ -121,9 +121,9 @@ ddsmoothmenu.init({
         	<div class="item project-post">
 						<div class="zouzou_tpl_about_box">
                         	<div class="square_coner">
-                     		   <span class="texts-a"><i class="fa fa-tablet"></i></span>
+                     		   <span class="texts-a"><i class="fa fa-group"></i></span>
                       	  </div>
-                     	   Responsive Layout</div>
+                     	   {{_('Together')}}</div>
 						<div class="col-xs-6 col-sm-6 col-md-3 hover-box" >
 							<div class="inner-hover-box">
 								<p>Morbi ac vestibulum nisl. Praesent lacinia id mi eget dictum. Fusce egestas turpis nec erat lobortis, ut tempus purus suscipit.</p>
@@ -135,9 +135,9 @@ ddsmoothmenu.init({
         	<div class="item project-post">
 						<div class="zouzou_tpl_about_box">
                         	<div class="square_coner">
-                     		   <span class="texts-a"><i class="fa fa-lock"></i></span>
+                     		   <span class="texts-a"><i class="fa fa-camera-retro"></i></span>
                       	  </div>
-                     	   Secured Website</div>
+                     	   {{_('Moment')}}</div>
 						<div class="col-xs-6 col-sm-6 col-md-3 hover-box" >
 							<div class="inner-hover-box">
 								<p>Etiam venenatis egestas magna sit amet varius. Vivamus neque eros, sollicitudin a ligula quis, interdum venenatis justo.</p>
@@ -149,9 +149,9 @@ ddsmoothmenu.init({
         	<div class="item project-post">
 						<div class="zouzou_tpl_about_box">
                         	<div class="square_coner">
-                     		   <span class="texts-a"><i class="fa fa-rocket"></i></span>
+                     		   <span class="texts-a"><i class="fa fa-heart"></i></span>
                       	  </div>
-                     	   Quick Service</div>
+                     	   {{_('Heart')}}</div>
 						<div class="col-xs-6 col-sm-6 col-md-3 hover-box" >
 							<div class="inner-hover-box">
 								<p>Vestibulum convallis leo vel tortor ultricies aliquam. Nullam faucibus urna vel volutpat ornare. Donec molestie accumsan ante.</p>
@@ -164,19 +164,19 @@ ddsmoothmenu.init({
 
     <div class="clear"></div>
     <div class="zouzou_tpl_reasonbg">
-    	<h2>Reasons to choose us?</h2>
+    	<h2>{{_('Reasons to choose ZouZou B&B?')}}</h2>
        		<p>Mauris placerat lacinia justo vitae feugiat. Free templates by templatemo.</p>
             <div class="clear height10"></div>
-	        <div class="fa fa-bell-o"></div>
-            <div class="fa fa-tablet"></div>
-            <div class="fa fa-lock"></div>
+	        <div class="fa fa-cutlery"></div>
+            <div class="fa fa-camera-retro"></div>
+            <div class="fa fa-heart"></div>
 			<div class="clear height20"></div>
             <a class="btn btn-large btn-primary" href="#">Read More</a>
     </div>
     <div class="clear"></div>
     <!--Our Portfolio Start-->
-    <div class="zouzou_tpl_portfolio" id="zouzou_tpl_portfolio">
-        	<h2>Our portfolio</h2>
+    <div class="zouzou_tpl_reservation" id="zouzou_tpl_reservation">
+        	<h2>{{_('Our Rooms')}}</h2>
             <p>Donec eget congue ligula, eget pharetra urna. Nam tempor tellus sit amet bibendum dapibus.</p>
 
             <div class="container">
