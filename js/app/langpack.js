@@ -29,7 +29,7 @@ var LANGPACK = {
         'No. 173, Section 1, Minzu Rd, Tianwei Township, Changhua County, Taiwan 522': '台灣彰化縣田尾鎮田尾村民族路一段173號',
         'Services': '服務項目',
         'Album': '相簿',
-        'About ZouZou B&B': '關於走走',
+        'About zouzou bnb': '關於走走',
         'Our partners': '合作商家',
         'Our blog': '走走記錄',
         'Room 1': '房間 1',

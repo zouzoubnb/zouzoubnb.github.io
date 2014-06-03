@@ -72,7 +72,7 @@ img {
 	line-height: 45px;
 	max-height: 45px;
 
-	text-transform: uppercase;
+	#text-transform: uppercase;
 	background-color: #72b842;
 	color: #FFF;
 	font-size: x-large;
