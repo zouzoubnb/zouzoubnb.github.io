@@ -2,7 +2,8 @@ var LANGPACK = {
     "en": {
         'Home': 'Home',
         'Contact Info': 'Contact',
-
+        'About zouzou bnb details': 'zouzou bnb is located in Tianwei Highway Garden, a.k.a "Home of Flowers", very close to the entrance of Yixinyuan, a place fulfilled with fresh air, beautiful flowers. We truely hope you could enjoy your stay with us.',
+        'Contact details': 'Please feel free to contact us if you have any questions.',
     },
 
     "zh_TW": {
@@ -21,7 +22,7 @@ var LANGPACK = {
         'Together': '親友相聚',
         'Moment': '美好時光',
         'Heart': '用心款待',
-        'Reasons to choose ZouZou B&B?': '為什麼要選擇走走?',
+        'Reasons to choose zouzou bnb?': '為什麼要選擇走走?',
         'Our Rooms': '精緻房型',
         'as your sweet home': '您旅行的家',
         'Read More': '了解更多',
@@ -37,5 +38,17 @@ var LANGPACK = {
         'Room 3': '房間 3',
         'Room 4': '房間 4',
         'Room 5': '房間 5',
+        'Your Info': '您的資料',
+        'Check-In': '入住日期',
+        'Check-Out': '退房日期',
+        'Comment': '其他意見',
+        'About zouzou bnb details': '走走位落於彰化田尾公路花園, 近怡心園入口, 我們誠摯地歡迎您, 與我們在這充滿新鮮空氣與花香的好地方悠閒走走。',
+        'Breakfast': '美味健康的早餐',
+        'Free WiFi': '免費無線網路',
+        'No Curfew': '沒有門禁',
+        'Sweet Lobby': '溫馨聊天的大廳',
+        'and more...': '和更多...',
+        'Contact details': '',
+
     }
 }

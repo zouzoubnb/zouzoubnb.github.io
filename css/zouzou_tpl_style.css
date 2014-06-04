@@ -647,7 +647,17 @@ and (max-width : 480px) {
 	}
 	.logo {
 		text-align: center;
+		float: none;
+		display: inline;
+
+		font-size: 15px;
+
 	}
+
+	.sublogo {
+		display: none;
+	}
+
 	.socials ul {
 		float: none;
 		text-align: center;

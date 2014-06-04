@@ -513,7 +513,7 @@ ddsmoothmenu.init({
         <div class="clear"></div>
         <div class="container">
         	<div class="zouzou_tpl_paracenter">
-            Pellentesque aliquam in risus eu ultrices. Suspendisse id interdum nibh. Etiam vel mattis augue, a vestibulum arcu. Nam rutrum diam dolor, eu vehicula nisl tincidunt non. Fusce tincidunt id justo eu tempor. Phasellus sit amet ante lobortis, mattis sapien id, dictum ipsum.
+            {{_('Contact details')}}
             </div>
             <div class="clear"></div>
             <div class="container">
@@ -536,6 +536,11 @@ ddsmoothmenu.init({
                 <div class="ss-form-question errorbox-good">
                     <div class="ss-item ss-item-required ss-text" dir="ltr">
                         <div class="ss-form-entry">
+                            <div class="ss-q-title">
+                                <label class="ss-q-item-label" for="entry_234990888">{{_('Your Info')}}</span></label>
+                            </div>
+
+
                             <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 
                             <div class="form-group">
@@ -608,9 +613,9 @@ ddsmoothmenu.init({
             <div class="ss-form-question errorbox-good">
                 <div class="ss-item ss-date" dir="ltr">
                     <div class="ss-form-entry">
-<!--                         <div class="ss-q-title">
-                            <label class="ss-q-item-label" for="entry_1777791244">Check-In</label>
-                        </div> -->
+                        <div class="ss-q-title">
+                            <label class="ss-q-item-label" for="entry_1777791244">{{_('Check-In')}}</label>
+                        </div>
 
                         <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 
@@ -627,9 +632,9 @@ ddsmoothmenu.init({
             <div class="ss-form-question errorbox-good">
                 <div class="ss-item ss-date" dir="ltr">
                     <div class="ss-form-entry">
-<!--                         <div class="ss-q-title">
-                            <label class="ss-q-item-label" for="entry_1809216101">Check-Out</label>
-                        </div> -->
+                        <div class="ss-q-title">
+                            <label class="ss-q-item-label" for="entry_1809216101">{{_('Check-Out')}}</label>
+                        </div>
 
                         <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 
@@ -682,6 +687,10 @@ ddsmoothmenu.init({
             <div class="ss-form-question errorbox-good">
                 <div class="ss-item ss-paragraph-text" dir="ltr">
                     <div class="ss-form-entry">
+                        <div class="ss-q-title">
+                            <label class="ss-q-item-label" for="entry_1536635881">{{_('Comment')}}</label>
+                        </div>
+
                         <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
 
                         <div class="form-group">
@@ -717,19 +726,18 @@ ddsmoothmenu.init({
     	<div class="container">
        	  <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
             	<h2>{{ _('About zouzou bnb')}}</h2>
-                <p>Etiam faucibus turpis id ipsum egestas porta. Cras in aliquet purus, ac varius turpis. Proin nibh mauris, lacinia at tincidunt egestas, tincidunt eleifend urna. Aliquam erat volutpat.</p>
+                <p>{{ _('About zouzou bnb details')}}</p>
           </div>
             <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
             	<h2>{{ _('Services') }}</h2>
                 <ul>
-                  <li>Integer condimentum</li>
-                  <li>Quisque eget mi felis</li>
-                  <li>Mauris placerat lacinia</li>
-                  <li>Cras molestie imperdiet</li>
-                  <li>Duis vel consectetur</li>
+                  <li>{{ _('Breakfast') }}</li>
+                  <li>{{ _('Free WiFi') }}</li>
+                  <li>{{ _('No Curfew') }}</li>
+                  <li>{{ _('Sweet Lobby') }}</li>
                 </ul>
                 <div class="clear"></div>
-                <div class="zouzou_tpl_morelink"><a href="#">and more... </a></div>
+                <div class="zouzou_tpl_morelink"><a href="#">{{ _('and more...') }}</a></div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
             	<h2>{{ _('Album') }}</h2>
@@ -756,7 +764,7 @@ ddsmoothmenu.init({
                 <span class="right col-xs-11">+886-912-317-300</span>
                 <div class="clear height10"></div>
                 <span class="left col-xs-1 fa fa-envelope"></span>
-                <span class="right col-xs-11">contact@company.com</span>
+                <span class="right col-xs-11">hello@zouzou.com</span>
                 <div class="clear height10"></div>
                 <span class="left col-xs-1 fa fa-globe"></span>
                 <span class="right col-xs-11">zouzoubnb.com</span>
@@ -769,7 +777,7 @@ ddsmoothmenu.init({
     <div class="zouzou_tpl_bottom">
     	<div class="container">
         	<div class="row">
-            	<div class="left">Copyright © 2014 <a href="#">zouzou bnb</a></div>
+            	<div class="left">Copyright © 2014 <a href="http://zouzoubnb.com">zouzou bnb</a></div>
                 <div class="right">
                 	<a href="#"><div class="fa fa-rss soc"></div></a>
                     <a href="#"><div class="fa fa-twitter soc"></div></a>
