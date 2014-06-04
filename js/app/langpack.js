@@ -48,7 +48,7 @@ var LANGPACK = {
         'No Curfew': '沒有門禁',
         'Sweet Lobby': '溫馨聊天的大廳',
         'and more...': '和更多...',
-        'Contact details': '',
+        'Contact details': '無論是訂房或是景點問題, 都歡迎您利用下方表單與我們進行聯繫。',
 
     }
 }
