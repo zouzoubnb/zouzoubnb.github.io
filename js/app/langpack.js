@@ -49,6 +49,10 @@ var LANGPACK = {
         'Sweet Lobby': '溫馨聊天的大廳',
         'and more...': '和更多...',
         'Contact details': '無論是訂房或是景點問題, 都歡迎您利用下方表單與我們進行聯繫。',
+        'Food? Sightseeing? What you could have with zouzou bnb? Click the Read More button to find out more about zouzou bnb.': '美食? 景點? 在走走您還可以怎麼玩? 請點選下方了解更多按鈕來探索走走。',
+        'We have 5 different rooms for you. Reserve your rooms today!': '我們精心設計了 5 間房間, 適合您與家人、朋友相聚出遊, 現在就預訂屬於您的房間!',
+        'Check out our latest posts.': '看看您我一起在走走留下的足跡',
+        'You may find some coupons or special offers with our partners': '入住走走, 您還可以擁有我們合作夥伴所提供的驚喜優惠。',
 
     }
 }
