@@ -63,37 +63,8 @@ img {
 	position: relative;
 }
 .logo {
+	padding: 0 0 0 20px;
 	width: 190px;
-
-	float: left;
-	padding: 10px;
-
-	height: 45px;
-	line-height: 45px;
-	max-height: 45px;
-
-	#text-transform: uppercase;
-	background-color: #72b842;
-	color: #FFF;
-	font-size: x-large;
-	text-align: center;
-
-}
-.sublogo {
-	width: 190px;
-
-	float: left;
-
-	background-color: #72b842;
-	color: #FFF;
-	font-size: small;
-	text-align: center;
-	margin: 0;
-	padding:0;
-
-	line-height: 35px;
-	max-height: 35px;
-
 }
 
 .mainMenu {
