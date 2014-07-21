@@ -35,6 +35,15 @@ function MainCtrl($rootScope) {
 
     window.getCurrentLang = getCurrentLang;
 
+
+    window.openWindow = function(url){
+        window.open(
+          url,
+          '_blank'
+        );
+    };
+
+
     $rootScope.lang = getCurrentLang();
 
     $rootScope._ = function(key){
