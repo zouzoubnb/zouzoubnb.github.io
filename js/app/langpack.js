@@ -4,6 +4,11 @@ var LANGPACK = {
         'Contact Info': 'Contact',
         'About zouzou bnb details': 'zouzou bnb is located in Tianwei Highway Garden, a.k.a "Home of Flowers", very close to the entrance of Yixinyuan, a place fulfilled with fresh air, beautiful flowers. We truely hope you could enjoy your stay with us.',
         'Contact details': 'Please feel free to contact us if you have any questions.',
+        'Room 1': 'Red',
+        'Room 2': 'Yellow',
+        'Room 3': 'Unknown 3',
+        'Room 4': 'Unknown 4',
+        'Room 5': 'Unknown 5',
     },
 
     "zh_TW": {
@@ -53,6 +58,11 @@ var LANGPACK = {
         'We have 5 different rooms for you. Reserve your rooms today!': '我們精心設計了 5 間房間, 適合您與家人、朋友相聚出遊, 現在就預訂屬於您的房間!',
         'Check out our latest posts.': '看看最新消息及您我一同在走走留下的足跡',
         'You may find some coupons or special offers with our partners': '入住走走, 您還可以擁有我們合作夥伴所提供的驚喜優惠。',
+        'Room 1': '紅紅',
+        'Room 2': '黃黃',
+        'Room 3': '未知 3',
+        'Room 4': '未知 4',
+        'Room 5': '未知 5',
 
     }
 }
