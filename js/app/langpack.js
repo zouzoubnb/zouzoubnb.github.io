@@ -9,12 +9,14 @@ var LANGPACK = {
         'Room 3': 'Unknown 3',
         'Room 4': 'Na-Na',
         'Room 5': 'Chin-Chin',
+        'customer 1 said': 'Vacation at ZouZou: 睡到自然醒的美容覺，一起床就有正妹老闆娘的超豐盛brunch，一起來走走度假吧～',
     },
 
     "zh_TW": {
         'Home': '首頁',
         'About': '關於',
         'Reservation': '訂房',
+        'Book Now!': '現在訂房',
         'Blog': '網誌',
         'Contact': '聯絡走走',
         'Contact us': '聯絡我們',
@@ -58,6 +60,7 @@ var LANGPACK = {
         'Room 3': '未知 3',
         'Room 4': '拿拿',
         'Room 5': '欽欽',
+        'customer 1 said': '走走度假模式：睡到自然醒的美容覺，一起床就有正妹老闆娘的超豐盛brunch，一起來走走度假吧～',
 
     }
 }
