@@ -297,71 +297,21 @@ ddsmoothmenu.init({
         	<p>{{ _('Check out our latest posts.') }}</p>
         <div class="clear"></div>
         <div class="container">
-       		<div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
+       		<div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12" ng-repeat="post in blog_posts">
             	<div class="zouzou_tpl_wrapperblogbox">
-                	<a href="#" class="fa fa-calendar tooltip1" title="28 January 2084"></a>
-                    <a href="#" class="fa fa-user tooltip2" title="Booker"></a>
-                    <a href="#" class="fa fa-tag tooltip3" title="HTML5, CSS3"></a>
-                    <a href="#" class="fa fa-comment tooltip4" title="Comments (4)"></a>
+                	<a href="#" class="fa fa-calendar tooltip1" title="{{post.date}}"></a>
+                    <a href="#" class="fa fa-user tooltip2" title="{{post.title}}"></a>
+                    <a href="#" class="fa fa-tag tooltip3" title="{{post.tags}}"></a>
+                    <!-- <a href="#" class="fa fa-comment tooltip4" title="Comments (4)"></a> -->
                 </div>
                 <div class="clear"></div>
-                <img src="images/zouzou_tpl_blogimage01.jpg" alt="blog image 1">
+                <span ng-show="post.img_url"><a href="{{post.post_url}}" target="_blank"><img src="{{post.img_url}}" alt="{{post.title}}"></a></span>
+                <span ng-show="!post.img_url"><a href="{{post.post_url}}" target="_blank"><img src="images/zouzou_tpl_blogimage03.jpg" alt="Default Blog Picture"></a></span>
                 <div class="clear"></div>
                 <div class="zouzou_tpl_blogtext">
-                	<span class="left">New Touring</span>
+                	<span class="left">{{post.title}}</span>
                     <span class="right">
-                    <a href="#" title="Click more"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
-                    </span>
-                </div>
-        	</div>
-            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
-            	<div class="zouzou_tpl_wrapperblogbox">
-                	<a href="#" class="fa fa-calendar tooltip1" title="26 January 2084"></a>
-                    <a href="#" class="fa fa-user tooltip2" title="George"></a>
-                    <a href="#" class="fa fa-tag tooltip3" title="Template, Design"></a>
-                    <a href="#" class="fa fa-comment tooltip4" title="Comments (8)"></a>
-                </div>
-                <div class="clear"></div>
-                <img src="images/zouzou_tpl_blogimage02.jpg" alt="blog image 2">
-                <div class="clear"></div>
-                <div class="zouzou_tpl_blogtext">
-                	<span class="left">Coffee Shop</span>
-                    <span class="right">
-                    <a href="#" title="Click more"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
-                    </span>
-                </div>
-        	</div>
-            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12 zouzou_tpl_margintop10">
-            	<div class="zouzou_tpl_wrapperblogbox">
-                	<a href="#" class="fa fa-calendar tooltip1" title="24 January 2084"></a>
-                    <a href="#" class="fa fa-user tooltip2" title="Jelly Bean"></a>
-                    <a href="#" class="fa fa-tag tooltip3" title="Web Design, Portfolio"></a>
-                    <a href="#" class="fa fa-comment tooltip4" title="Comments (16)"></a>
-                </div>
-                <div class="clear"></div>
-                <img src="images/zouzou_tpl_blogimage03.jpg" alt="blog image 3">
-                <div class="clear"></div>
-                <div class="zouzou_tpl_blogtext">
-                	<span class="left">Tea Time</span>
-                    <span class="right">
-                    <a href="#" title="Click more"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
-                    </span>
-                </div>
-        	</div>
-            <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12 zouzou_tpl_margintop10">
-            	<div class="zouzou_tpl_wrapperblogbox">
-                	<a href="#" class="fa fa-calendar tooltip1" title="22 January 2084"></a>
-                    <a href="#" class="fa fa-user tooltip2" title="John Walker"></a>
-                    <a href="#" class="fa fa-tag tooltip3" title="Logo, Creative"></a>
-                    <a href="#" class="fa fa-comment tooltip4" title="Comments (32)"></a>
-                </div>
-                <div class="clear"></div>
-                <img src="images/zouzou_tpl_blogimage04.jpg" alt="blog image 4">
-                <div class="clear"></div>
-                <div class="zouzou_tpl_blogtext">
-                	<span class="left">Mobile First</span>
-                    <span class="right">
-                    <a href="#" title="Click more"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
+                    <a href="{{post.post_url}}" title="Click more" target="_blank"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
                     </span>
                 </div>
         	</div>
@@ -591,28 +541,17 @@ ddsmoothmenu.init({
 
                         <div class="form-group">
                             <select class="form-control" id="entry_981945938" name="entry.981945938">
-                                <option value="Room 1">
-                                    {{_('Room 1')}}
-                                </option>
-
-                                <option value="Room 2">
-                                    {{_('Room 2')}}
-                                </option>
-
-                                <option value="Room 3">
-                                    {{_('Room 3')}}
-                                </option>
-
-                                <option value="Room 4">
-                                    {{_('Room 4')}}
-                                </option>
-
-                                <option value="Room 5">
-                                    {{_('Room 5')}}
-                                </option>
-                            </select> <!--                         <div class="required-message">
+                                <option value="Room 1">{{_('Room 1')}}</option>
+                                <option value="Room 2">{{_('Room 2')}}</option>
+                                <option value="Room 3">{{_('Room 3')}}</option>
+                                <option value="Room 4">{{_('Room 4')}}</option>
+                                <option value="Room 5">{{_('Room 5')}}</option>
+                            </select>
+                            <!--
+                            <div class="required-message">
                                 This is a required question
-                            </div> -->
+                            </div>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -856,7 +795,7 @@ ddsmoothmenu.init({
           }
       //-->
       </script>
-      <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+      <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
 
       <script type="text/javascript">
       $(function() {
