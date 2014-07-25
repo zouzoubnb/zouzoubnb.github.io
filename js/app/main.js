@@ -90,12 +90,21 @@ function MainCtrl($rootScope) {
         return tags_str;
     }
 
+    getImgUrlFromBlogBody = function(blog_body){
+        m = blog_body.match(/<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/);
+        if(m && m.length > 1){
+            return m[1];
+        }else{
+            return null;
+        }
+    }
+
     processBlogData = function(data) {
         console.log(data.response);
         if (data.response && data.response.posts){
             posts = data.response.posts;
             for(var i=0; i<posts.length; i++){
-                var item = {title: posts[i].title, date: posts[i].date,  post_url: posts[i].post_url, tags: processTags(posts[i].tags)};
+                var item = {title: posts[i].title, date: posts[i].date,  img_url: getImgUrlFromBlogBody(posts[i].body), post_url: posts[i].post_url, tags: processTags(posts[i].tags)};
                 $rootScope.blog_posts.push(item);
             }
         }
