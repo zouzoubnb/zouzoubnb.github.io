@@ -18,18 +18,18 @@ function MainCtrl($rootScope) {
       if (lang) {
         return lang.replace("-", "_");
       } else {
-        var lang_browser = getCurrentLangByBrowserSettings();
-        console.log('browser lang:', lang_browser);
-        switch(lang_browser){
-            case 'zh':
-            case 'zh_TW':
-                return 'zh_TW';
-                break;
-            default:
-                console.log('default', lang_browser);
-                return 'en';
-                break;
-        }
+        return 'zh_TW';
+        // var lang_browser = getCurrentLangByBrowserSettings();
+        // console.log('browser lang:', lang_browser);
+        // switch(lang_browser){
+        //     case 'zh':
+        //     case 'zh_TW':
+        //         return 'zh_TW';
+        //         break;
+        //     default:
+        //         return 'en';
+        //         break;
+        // }
       }
     };
 
@@ -86,6 +86,8 @@ function MainCtrl($rootScope) {
 
         if (tags_str.slice(0,2) === ", "){
             tags_str = tags_str.slice(2);
+        }else if(tags_str==""){
+            return null;
         }
         return tags_str;
     }
@@ -104,7 +106,7 @@ function MainCtrl($rootScope) {
         if (data.response && data.response.posts){
             posts = data.response.posts;
             for(var i=0; i<posts.length; i++){
-                var item = {title: posts[i].title, date: posts[i].date,  img_url: getImgUrlFromBlogBody(posts[i].body), post_url: posts[i].post_url, tags: processTags(posts[i].tags)};
+                var item = {title: posts[i].title, date: new Date(posts[i].timestamp*1000),  img_url: getImgUrlFromBlogBody(posts[i].body), post_url: posts[i].post_url, tags: processTags(posts[i].tags)};
                 $rootScope.blog_posts.push(item);
             }
         }

@@ -8,7 +8,7 @@
 -->
 <html ng-app>
   <head>
-    <title>zouzou bnb</title>
+    <title>Zouzou B&B</title>
     <meta name="keywords" content="smoothy, responsive bootstrap, one page, green, white, free html5 template, templatemo" />
 	<meta name="description" content="Smoothy is free HTML5 template for multi-purpose that is based on responsive bootstrap framework." />
     <meta charset="UTF-8">
@@ -74,7 +74,7 @@ ddsmoothmenu.init({
         <div class="row">
           <div class="col-sm-3 col-md-3">
             <div class="logo">
-            <a rel="nofollow" href="http://www.zouzoubnb.com"><img src="images/logo.jpg" alt="zouzou bnb"></a>
+            <a rel="nofollow" href="http://www.zouzoubnb.com"><img src="images/logo.jpg" alt="Zouzou B&B"></a>
             </div>
           </div>
           <div class="col-sm-9 col-md-9 zouzou_tpl_col9">
@@ -166,8 +166,8 @@ ddsmoothmenu.init({
 
     <div class="clear"></div>
     <div class="zouzou_tpl_reasonbg">
-    	<h2>{{_('Reasons to choose zouzou bnb?')}}</h2>
-       		<p>{{_('Food? Sightseeing? What you could have with zouzou bnb? Click the Read More button to find out more about zouzou bnb.')}}</p>
+    	<h2>{{_('Reasons to choose Zouzou B&B?')}}</h2>
+       		<p>{{_('Food? Sightseeing? What you could have with Zouzou B&B? Click the Read More button to find out more about Zouzou B&B.')}}</p>
             <div class="clear height10"></div>
 	        <div class="fa fa-cutlery"></div>
             <div class="fa fa-camera-retro"></div>
@@ -185,7 +185,7 @@ ddsmoothmenu.init({
            	  <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
-								<img src="images/rooms/1.jpg" alt="portfolio 1">
+								<img src="images/rooms/1.jpg" alt="{{_('Room 1')}}">
 								<div class="overlay-p">
 									<a href="images/rooms/1.jpg" data-rel="lightbox[portfolio]">
                                     	<ul>
@@ -205,7 +205,7 @@ ddsmoothmenu.init({
               <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
-								<img src="images/rooms/2.jpg" alt="portfolio 2">
+								<img src="images/rooms/2.jpg" alt="{{_('Room 2')}}">
 								<div class="overlay-p">
 									<a href="images/rooms/2.jpg" data-rel="lightbox[portfolio]">
                                     	<ul>
@@ -225,7 +225,7 @@ ddsmoothmenu.init({
               <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
-								<img src="images/rooms/3.jpg" alt="portfolio 3">
+								<img src="images/rooms/3.jpg" alt="{{_('Room 3')}}">
 								<div class="overlay-p">
 									<a href="images/rooms/3.jpg" data-rel="lightbox[portfolio]">
                                     	<ul>
@@ -245,7 +245,7 @@ ddsmoothmenu.init({
               <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
-								<img src="images/rooms/4.jpg" alt="portfolio 4">
+								<img src="images/rooms/4.jpg" alt="{{_('Room 4')}}">
 								<div class="overlay-p">
 									<a href="images/rooms/4.jpg" data-rel="lightbox[portfolio]">
                                     	<ul>
@@ -268,7 +268,7 @@ ddsmoothmenu.init({
               		<div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
               	<div class="portfolio-item">
 							<div class="portfolio-thumb">
-								<img src="images/rooms/5.jpg" alt="portfolio 5">
+								<img src="images/rooms/5.jpg" alt="{{_('Room 5')}}">
 								<div class="overlay-p">
 									<a href="images/rooms/5.jpg" data-rel="lightbox[portfolio]">
                                     	<ul>
@@ -293,16 +293,14 @@ ddsmoothmenu.init({
     <div class="clear"></div>
     <!--Our Blog Start-->
     <div class="zouzou_tpl_blog" id="zouzou_tpl_blog">
-    	<h2>{{ _('Our blog') }}</h2>
+    	<h2>{{ _('Our Blog') }}</h2>
         	<p>{{ _('Check out our latest posts.') }}</p>
         <div class="clear"></div>
         <div class="container">
        		<div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12" ng-repeat="post in blog_posts">
             	<div class="zouzou_tpl_wrapperblogbox">
-                	<a href="#" class="fa fa-calendar tooltip1" title="{{post.date}}"></a>
-                    <a href="#" class="fa fa-user tooltip2" title="{{post.title}}"></a>
-                    <a href="#" class="fa fa-tag tooltip3" title="{{post.tags}}"></a>
-                    <!-- <a href="#" class="fa fa-comment tooltip4" title="Comments (4)"></a> -->
+                	<a href="#" class="fa fa-calendar tooltip1" title="{{post.date | date:'MM/dd/yyyy'}}"></a>
+                    <a href="#" class="fa fa-tag tooltip3" title="{{post.tags}}" ng-show="post.tags"></a>
                 </div>
                 <div class="clear"></div>
                 <span ng-show="post.img_url"><a href="{{post.post_url}}" target="_blank"><img src="{{post.img_url}}" alt="{{post.title}}"></a></span>
@@ -311,7 +309,7 @@ ddsmoothmenu.init({
                 <div class="zouzou_tpl_blogtext">
                 	<span class="left">{{post.title}}</span>
                     <span class="right">
-                    <a href="{{post.post_url}}" title="Click more" target="_blank"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
+                    <a href="{{post.post_url}}" title="{{_('Read More')}}" target="_blank"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
                     </span>
                 </div>
         	</div>
@@ -324,7 +322,7 @@ ddsmoothmenu.init({
         <div class="row">
           <div class="col-md-12">
             <div class="secHeader">
-              <h2 class="text-center">{{ _('Our partners') }}</h2>
+              <h2 class="text-center">{{ _('Our Partners') }}</h2>
               <p class="text-center">{{ _('You may find some coupons or special offers with our partners') }}</p>
             </div>
           </div>
@@ -362,7 +360,7 @@ ddsmoothmenu.init({
                   <div class="fa fa-circle mleft1"></div>
 			  	</div>
                 <div class="zouzou_tpl_clientimage">
-                <p class="zouzou_tpl_clientdes">Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus, vel pharetra neque enim tristique risus.</p>
+                <p class="zouzou_tpl_clientdes">{{_('customer 2 said')}}</p>
   				<img src="images/clients/2.jpg" alt="client image 2" />
                 <div class="clear"></div>
                   <div class="fa fa-circle mleft2"></div>
@@ -397,7 +395,7 @@ ddsmoothmenu.init({
     <!--Contact Start -->
     <div class="zouzou_tpl_lightgrey" id="zouzou_tpl_contact">
     	<div class="zouzou_tpl_paracenter">
-    	<h2>{{_('Contact us')}}</h2></div>
+    	<h2>{{_('Contact Us')}}</h2></div>
         <div class="clear"></div>
         <div class="container">
         	<div class="zouzou_tpl_paracenter">
@@ -600,8 +598,8 @@ ddsmoothmenu.init({
     <div class="zouzou_tpl_footer">
     	<div class="container">
        	  <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
-            	<h2>{{ _('About zouzou bnb')}}</h2>
-                <p>{{ _('About zouzou bnb details')}}</p>
+            	<h2>{{ _('About Zouzou B&B')}}</h2>
+                <p>{{ _('About Zouzou B&B details')}}</p>
           </div>
             <div class="col-xs-6 col-sm-6 col-md-3 zouzou_tpl_col12">
             	<h2>{{ _('Services') }}</h2>
@@ -618,14 +616,14 @@ ddsmoothmenu.init({
             	<h2>{{ _('Album') }}</h2>
 					<div id="zouzou_tpl_album" >
           <ul class="nobullet footer_gallery">
-                <li><a href="images/album/1.jpg" data-rel="lightbox[gallery]"><img src="images/album/s1.jpg" alt="image 1" /></a></li>
-                <li><a href="images/album/2.jpg" data-rel="lightbox[gallery]"><img src="images/album/s2.jpg" alt="image 2" /></a></li>
-                <li><a href="images/album/3.jpg" data-rel="lightbox[gallery]"><img src="images/album/s3.jpg" alt="image 3" /></a></li>
-                <li><a href="images/album/4.jpg" data-rel="lightbox[gallery]"><img src="images/album/s4.jpg" alt="image 4" /></a></li>
-                <li><a href="images/album/5.jpg" data-rel="lightbox[gallery]"><img src="images/album/s5.jpg" alt="image 5" /></a></li>
-          	    <li><a href="images/album/6.jpg" data-rel="lightbox[gallery]"><img src="images/album/s6.jpg" alt="image 6" /></a></li>
-                <li><a href="images/album/7.jpg" data-rel="lightbox[gallery]"><img src="images/album/s7.jpg" alt="image 7" /></a></li>
-                <li><a href="images/album/8.jpg" data-rel="lightbox[gallery]"><img src="images/album/s8.jpg" alt="image 8" /></a></li>
+                <li><a href="images/album/1.jpg" data-rel="lightbox[gallery]"><img src="images/album/1.jpg" alt="image 1" style="max-height: 44px; max-width: 55px;"/></a></li>
+                <li><a href="images/album/2.jpg" data-rel="lightbox[gallery]"><img src="images/album/2.jpg" alt="image 2" style="max-height: 44px; max-width: 55px;"/></a></li>
+                <li><a href="images/album/3.jpg" data-rel="lightbox[gallery]"><img src="images/album/3.jpg" alt="image 3" style="max-height: 44px; max-width: 55px;"/></a></li>
+                <li><a href="images/album/4.jpg" data-rel="lightbox[gallery]"><img src="images/album/4.jpg" alt="image 4" style="max-height: 44px; max-width: 55px;"/></a></li>
+                <li><a href="images/album/5.jpg" data-rel="lightbox[gallery]"><img src="images/album/5.jpg" alt="image 5" style="max-height: 44px; max-width: 55px;"/></a></li>
+          	    <li><a href="images/album/6.jpg" data-rel="lightbox[gallery]"><img src="images/album/6.jpg" alt="image 6" style="max-height: 44px; max-width: 55px;"/></a></li>
+                <li><a href="images/album/7.jpg" data-rel="lightbox[gallery]"><img src="images/album/7.jpg" alt="image 7" style="max-height: 44px; max-width: 55px;"/></a></li>
+                <li><a href="images/album/8.jpg" data-rel="lightbox[gallery]"><img src="images/album/8.jpg" alt="image 8" style="max-height: 44px; max-width: 55px;"/></a></li>
             </ul>
             <br style="clear: left" />
         </div>
@@ -652,12 +650,10 @@ ddsmoothmenu.init({
     <div class="zouzou_tpl_bottom">
     	<div class="container">
         	<div class="row">
-            	<div class="left">Copyright © 2014 <a href="http://zouzoubnb.com">zouzou bnb</a></div>
+            	<div class="left">{{_('Copyright')}} © 2014 <a href="http://zouzoubnb.com">Zouzou B&B</a></div>
                 <div class="right">
-                	<a href="#"><div class="fa fa-rss soc"></div></a>
-                    <a href="#"><div class="fa fa-twitter soc"></div></a>
-                    <a href="#"><div class="fa fa-linkedin soc"></div></a>
-                    <a href="#"><div class="fa fa-dribbble soc"></div></a>
+                	<a href="http://blog.zouzoubnb.com/rss" target="_blank"><div class="fa fa-rss soc"></div></a>
+                    <a href="http://blog.zouzoubnb.com" target="_blank"><div class="fa fa-tumblr soc"></div></a>
                     <a href="https://www.facebook.com/zouzoubnb" target="_blank"><div class="fa fa-facebook soc"></div></a>
                 </div>
             </div>
