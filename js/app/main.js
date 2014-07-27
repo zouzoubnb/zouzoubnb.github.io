@@ -113,6 +113,19 @@ function MainCtrl($rootScope) {
         $rootScope.$apply(); 
     }
 
+    changeRoomBg = function(obj){
+        console.log("mouseover", obj);
+        obj = $(obj);
+        if (obj && obj.attr('data-rel')){
+            var url = obj.attr('data-rel');
+        }else{
+            return;
+        }
+
+        console.log('bg_img_url', url);
+        $('#lbImage').css("background-image", "url("+url+")"); 
+    }
+    
     getBlogRss();
 
 }

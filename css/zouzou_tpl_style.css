@@ -431,6 +431,54 @@ img {
 .zouzou_tpl_clientimage	div.mleft4	{ left: 49%;}
 .zouzou_tpl_clientimage	div.mleft5	{ left: 52%;}
 
+
+/* selecting pic for rooms */
+
+.zouzou_tpl_roomimage {
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.zouzou_tpl_roomimage img{
+	width: 80px;
+	height: 80px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
+.zouzou_tpl_roomimage img:hover { border: 3px solid #69a541; }
+
+.zouzou_tpl_roomdes {
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+
+}
+.zouzou_tpl_roomimage:hover .zouzou_tpl_clientdes {
+  visibility: visible;
+  opacity: 1;
+
+}
+.zouzou_tpl_roomimage	div.fa	{font-size: 12px; position: absolute;}
+.zouzou_tpl_roomimage:hover div.fa{ color: #69a541; font-size: 12px; }
+.zouzou_tpl_roomimage	div.mleft1	{ left: 40%;}
+.zouzou_tpl_roomimage	div.mleft2	{ left: 43%;}
+.zouzou_tpl_roomimage	div.mleft3	{ left: 46%;}
+.zouzou_tpl_roomimage	div.mleft4	{ left: 49%;}
+.zouzou_tpl_roomimage	div.mleft5	{ left: 52%;}
+
+
+
+
+
+
 .zouzou_tpl_maps {
   margin: 50px 0;
   display: block;
