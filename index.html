@@ -393,8 +393,8 @@ ddsmoothmenu.init({
                     <a href="#" class="fa fa-tag tooltip3" title="{{post.tags}}" ng-show="post.tags"></a>
                 </div>
                 <div class="clear"></div>
-                <span ng-show="post.img_url"><a href="{{post.post_url}}" target="_blank"><img src="{{post.img_url}}" alt="{{post.title}}"></a></span>
-                <span ng-show="!post.img_url"><a href="{{post.post_url}}" target="_blank"><img src="images/zouzou_tpl_blogimage03.jpg" alt="Default Blog Picture"></a></span>
+                <span ng-show="post.img_url"><a href="{{post.post_url}}" target="_blank"><div style="background-image: url({{post.img_url}}); width: 255px; height:191px" alt="{{post.title}}"></div></a></span>
+                <span ng-show="!post.img_url"><a href="{{post.post_url}}" target="_blank"><div style="background-image: url(./images/blog_default.png); background-repeat-y: no-repeat; width: 255px; height:191px" alt="Default Blog Picture"></div></a></span>
                 <div class="clear"></div>
                 <div class="zouzou_tpl_blogtext">
                 	<span class="left">{{post.title}}</span>
