@@ -2,7 +2,7 @@ var LANGPACK = {
     "en": {
         'Home': 'Home',
         'Contact Info': 'Contact',
-        'About Zouzou B&B details': 'Zouzou B&B is located in Tianwei Highway Garden, a.k.a "Home of Flowers", very close to the entrance of Yixinyuan, a place fulfilled with fresh air, beautiful flowers. We truely hope you could enjoy your stay with us.',
+        'About Zouzou B&B details': 'Zouzou B&B (License issued by Changhua County Government: No. 057.) is located in Tianwei Highway Garden, a.k.a "Home of Flowers", very close to the entrance of Yixinyuan, a place fulfilled with fresh air, beautiful flowers. We truely hope you could enjoy your stay with us.',
         'Contact details': 'Please feel free to contact us if you have any questions.',
         'More about our Delicious Food': 'We serve the healthy and delicious food for you. You may see it by click here.',
         'More about Together': 'Zouzou B&B has various rooms for you.',
@@ -55,7 +55,7 @@ var LANGPACK = {
         'Check-In': '入住日期',
         'Check-Out': '退房日期',
         'Comment': '其他意見',
-        'About Zouzou B&B details': '走走位落於彰化田尾公路花園, 近怡心園入口, 我們誠摯地歡迎您, 與我們在這充滿新鮮空氣與花香的好地方悠閒走走。',
+        'About Zouzou B&B details': '走走是合法登記民宿，彰化縣民宿057號，位落於彰化田尾公路花園, 近怡心園入口, 我們誠摯地歡迎您, 與我們在這充滿新鮮空氣與花香的好地方悠閒走走。',
         'Breakfast': '美味健康的早餐',
         'Free WiFi': '免費無線網路',
         'No Curfew': '沒有門禁',
@@ -74,6 +74,5 @@ var LANGPACK = {
         'Room 5': '欽欽',
         'customer 1 said': '走走度假模式：睡到自然醒的美容覺，一起床就有正妹老闆娘的超豐盛brunch，一起來走走度假吧～',
         'customer 2 said': '喜歡民宿的朋友又多了一個選擇～位在彰化田尾花路公園裡的「走走」招牌是青綠色，屋內風格採清新明亮簡約風，非常自在又舒適，重點是美麗的老闆娘很會做早餐！而且很貼心地提供客人免費租騎腳踏車喲！',
-
     }
 }
