@@ -55,6 +55,23 @@
 
 -->
 
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '451850315459542',
+            autoLogAppEvents: true,
+            xfbml: true,
+            version: 'v5.0'
+        });
+    };
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <script type="text/javascript">
 
@@ -70,6 +87,9 @@ ddsmoothmenu.init({
 
   </head>
   <body ng-controller="MainCtrl" ng-cloak class="ng-cloak">
+    <div class="fb-customerchat" page_id="657732707609696" minimized="false">
+    </div>
+
     <header>
     <!-- start menu -->
     <div id="zouzou_tpl_home">
@@ -506,7 +526,7 @@ ddsmoothmenu.init({
         <div class="row">
 
 
-
+    <!--
     <form action="https://docs.google.com/forms/d/16rSKHVOecv-y8OgSym5pwMmGUjT1lkNhutmZhgxepoY/formResponse" id="ss-form" method="post" name="ss-form" onsubmit="" target="_self">
         <div class="col-md-3">
                 <div class="ss-form-question errorbox-good">
@@ -521,11 +541,6 @@ ddsmoothmenu.init({
 
                             <div class="form-group">
                                 <input class="ss-q-short form-control" dir="auto" id="entry_234990888" name="entry.234990888" placeholder="{{ _('Your Name') }}" required="" title="" type="text" value="">
-                                <!--                             <div class="error-message"></div>
-
-                                    <div class="required-message">
-                                        This is a required question
-                                    </div> -->
                             </div>
                         </div>
                     </div>
@@ -538,13 +553,7 @@ ddsmoothmenu.init({
 
                             <div class="form-group">
                                 <input class="ss-q-short form-control" dir="auto" id="entry_989226544" name="entry.989226544" placeholder="{{ _('Your Email') }}" required="" title=
-                                "Must be a valid email address" type="email" value=""> <!--                             <div class="error-message">
-                                        Must be a valid email address
-                                    </div>
-
-                                    <div class="required-message">
-                                        This is a required question
-                                    </div> -->
+                                "Must be a valid email address" type="email" value="">
                             </div>
                         </div>
                     </div>
@@ -557,13 +566,7 @@ ddsmoothmenu.init({
 
                             <div class="form-group">
                                 <input class="ss-q-short form-control" dir="auto" id="entry_232950451" name="entry.232950451" pattern=".*.*" placeholder="{{ _('Your Phone') }}" required="" title="Must contain "
-                                type="text" value=""> <!--                             <div class="error-message">
-                                        Must contain
-                                    </div>
-
-                                    <div class="required-message">
-                                        This is a required question
-                                    </div> -->
+                                type="text" value="">
                             </div>
                         </div>
                     </div>
@@ -596,9 +599,6 @@ ddsmoothmenu.init({
 
                         <div class="form-group">
                             <input class="ss-q-date form-control" dir="auto" id="entry_1777791244" name="entry.1777791244" type="date" value="" placeholder="Check-In">
-                            <!--                             <div class="required-message">
-                                This is a required question
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -615,9 +615,6 @@ ddsmoothmenu.init({
 
                         <div class="form-group">
                             <input class="ss-q-date form-control" dir="auto" id="entry_1809216101" name="entry.1809216101" type="date" value="" placeholder="Check-Out">
-                            <!--                             <div class="required-message">
-                                This is a required question
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -636,11 +633,6 @@ ddsmoothmenu.init({
                                 <option value="Room 4">{{_('Room 4')}}</option>
                                 <option value="Room 5">{{_('Room 5')}}</option>
                             </select>
-                            <!--
-                            <div class="required-message">
-                                This is a required question
-                            </div>
-                            -->
                         </div>
                     </div>
                 </div>
@@ -659,23 +651,15 @@ ddsmoothmenu.init({
 
                         <div class="form-group">
                             <textarea class="form-control" cols="0" dir="auto" id="entry_1536635881" name="entry.1536635881" rows="8">
-</textarea> <!--                                     <div class="error-message"></div>
-
-                            <div class="required-message">
-                                This is a required question
-                            </div> -->
+</textarea>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </form>
+-->
     <!-- form ends here -->
-
-
-
-
-
 
         </div>
       </div>
@@ -727,8 +711,6 @@ ddsmoothmenu.init({
                 <span class="left col-xs-1 fa fa-phone"></span>
                 <span class="right col-xs-11">+886-912-290-903</span>
                 <div class="clear height10"></div>
-                <span class="left col-xs-1 fa fa-envelope"></span>
-                <span class="right col-xs-11">hello@zouzoubnb.com</span>
                 <div class="clear height10"></div>
                 <span class="left col-xs-1 fa fa-globe"></span>
                 <span class="right col-xs-11">zouzoubnb.com</span>
@@ -741,10 +723,8 @@ ddsmoothmenu.init({
     <div class="zouzou_tpl_bottom">
     	<div class="container">
         	<div class="row">
-            	<div class="left">{{_('Copyright')}} © 2014 <a href="http://zouzoubnb.com">Zouzou B&B</a></div>
+            	<div class="left">{{_('Copyright')}} © 2014-{{ currentYear }} <a href="http://zouzoubnb.com">Zouzou B&B</a></div>
                 <div class="right">
-                	<a href="http://blog.zouzoubnb.com/rss" target="_blank"><div class="fa fa-rss soc"></div></a>
-                    <a href="http://blog.zouzoubnb.com" target="_blank"><div class="fa fa-tumblr soc"></div></a>
                     <a href="https://www.facebook.com/zouzoubnb" target="_blank"><div class="fa fa-facebook soc"></div></a>
                 </div>
             </div>

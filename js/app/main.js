@@ -61,6 +61,10 @@ function MainCtrl($rootScope) {
         }
     };
 
+    $rootScope.currentYear = function(){
+        return new Date().getFullYear();
+    }();
+
     $rootScope.blog_posts = [];
 
     getBlogRss = function(){
@@ -126,6 +130,7 @@ function MainCtrl($rootScope) {
         $('#lbImage').css("background-image", "url("+url+")"); 
     }
     
-    getBlogRss();
+    // Disabled loading RSS from blog 2019/11/07
+    //getBlogRss();
 
 }
