@@ -23,8 +23,6 @@
     <link href="css/zouzou_tpl_style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/zouzou_tpl_misc.css">
 
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/nivo-slider.css">
     <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
@@ -55,20 +53,21 @@
 
 -->
 
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
 <script>
     window.fbAsyncInit = function () {
         FB.init({
-            appId: '451850315459542',
-            autoLogAppEvents: true,
             xfbml: true,
             version: 'v5.0'
         });
     };
+
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) { return; }
+        if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
@@ -87,8 +86,10 @@ ddsmoothmenu.init({
 
   </head>
   <body ng-controller="MainCtrl" ng-cloak class="ng-cloak">
-    <div class="fb-customerchat" page_id="657732707609696" minimized="false">
-    </div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="657732707609696" theme_color="#ff7e29"
+    logged_in_greeting="Hi! How can we help you? 您好! 需要協助嗎?" logged_out_greeting="Hi! How can we help you? 您好! 需要協助嗎?">
+</div>
 
     <header>
     <!-- start menu -->
