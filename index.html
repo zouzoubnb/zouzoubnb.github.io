@@ -419,9 +419,7 @@ ddsmoothmenu.init({
                 <span ng-show="!post.img_url"><a href="{{post.post_url}}" target="_blank"><div style="background-image: url(./images/blog_default.png); background-repeat-y: no-repeat; width: 255px; height:191px" alt="Default Blog Picture"></div></a></span>
                 <div class="clear"></div>
                 <div class="zouzou_tpl_blogtext">
-                	<span class="left">{{post.title}}</span>
-                    <span class="right">
-                    <a href="{{post.post_url}}" title="{{_('Read More')}}" target="_blank"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a>
+                	<span class="left"><a href="{{post.post_url}}" title="{{_('Read More')}}" target="_blank">{{post.title}}</a></span>
                     </span>
                 </div>
         	</div>

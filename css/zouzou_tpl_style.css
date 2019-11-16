@@ -333,8 +333,11 @@ img {
 
 .zouzou_tpl_blogtext span.left	{
 	text-align: left;
-	width: 70%;
 	float: left;
+    height: 100px;
+    overflow: auto;
+    white-space: pre-line;
+    text-overflow: ellipsis;
 }
 .zouzou_tpl_blogtext span.right	{
 	text-align: right;

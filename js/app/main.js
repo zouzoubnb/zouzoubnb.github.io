@@ -1,7 +1,6 @@
 function MainCtrl($rootScope) {
-    var BLOG_API_URL = "http://api.tumblr.com/v2/blog/zouzoubnb.tumblr.com/posts";
-    var BLOG_API_KEY = "YT6dJznWbZF0VtgHTNRZD5BRHUkM3VkC7GkXfIvpt1WtPuyra8";
-    var BLOG_TAG = "ZOUZOU_HOME";
+    var FB_PAGE_FEEDS_API_URL = "https://zouzoube.herokuapp.com/feeds";
+    //var FB_PAGE_FEEDS_API_URL = "http://localhost:8080/feeds";
     var getCurrentLang, getQueryParam;
 
     getQueryParam = function(name) {
@@ -67,54 +66,34 @@ function MainCtrl($rootScope) {
 
     $rootScope.blog_posts = [];
 
-    getBlogRss = function(){
+    getFBPageFeeds = function(){
+        console.log('Getting Feeds...')
         $.ajax({
-             url: BLOG_API_URL,
-             method: 'get',
-             data : ({
-                 api_key: BLOG_API_KEY,
-                 tag: BLOG_TAG,
-                 jsonp: 'processBlogData'
-             }),
-             dataType: "jsonp"
-         });
-    }
-
-    processTags = function(tags){
-        var tags_str = "";
-        for(var i=0; i<tags.length; i++){
-            if(tags[i]!==BLOG_TAG){
-                tags_str = tags_str + ", " + BLOG_TAG;
-            }
-        }
-
-        if (tags_str.slice(0,2) === ", "){
-            tags_str = tags_str.slice(2);
-        }else if(tags_str==""){
-            return null;
-        }
-        return tags_str;
-    }
-
-    getImgUrlFromBlogBody = function(blog_body){
-        m = blog_body.match(/<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/);
-        if(m && m.length > 1){
-            return m[1];
-        }else{
-            return null;
-        }
-    }
-
-    processBlogData = function(data) {
-        console.log(data.response);
-        if (data.response && data.response.posts){
-            posts = data.response.posts;
-            for(var i=0; i<posts.length; i++){
-                var item = {title: posts[i].title, date: new Date(posts[i].timestamp*1000),  img_url: getImgUrlFromBlogBody(posts[i].body), post_url: posts[i].post_url, tags: processTags(posts[i].tags)};
+            url: FB_PAGE_FEEDS_API_URL,
+            method: 'get',
+            dataType: "json"
+        })
+        .done(function (data) {
+            console.log(data.data);
+            var feeds = data.data;
+            for (var i=0; i<4; i++) {
+                var item = {
+                    title: feeds[i].message,
+                    date: new Date(feeds[i].created_time),
+                    img_url: feeds[i].picture || '' ,
+                    post_url: feeds[i].attachments && feeds[i].attachments.data && feeds[i].attachments.data[0] && feeds[i].attachments.data[0].url,
+                };
                 $rootScope.blog_posts.push(item);
             }
-        }
-        $rootScope.$apply(); 
+
+            $rootScope.$apply();
+        })
+        .fail(function () {
+            console.log("error");
+        })
+        .always(function () {
+            console.log("complete");
+        });
     }
 
     changeRoomBg = function(obj){
@@ -130,7 +109,5 @@ function MainCtrl($rootScope) {
         $('#lbImage').css("background-image", "url("+url+")"); 
     }
     
-    // Disabled loading RSS from blog 2019/11/07
-    //getBlogRss();
-
+    getFBPageFeeds();
 }
